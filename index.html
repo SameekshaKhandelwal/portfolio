@@ -8,24 +8,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <!-- below copied -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
 		crossorigin="anonymous"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/app.js"></script>
 </head>
 <body>
 <header>
 	<div class="container">
-<nav class="flex items-center justify-between">
+<nav id="main-navs" class="flex items-center justify-between">
 <div class="left flex items-center">
 	<div class="branding">
 		<!-- <img src="images/154-1545805_portfolio-icons-code-web-development-logo.png" alt=""> -->
 	</div>
 	<div>
 		<a href="#">HOME</a>
-		<a href="#">ABOUT</a>
-		<a href="#">SKILLS</a>
-		<a href="#">PAGES</a>
-		<a href="#">BLOG</a>
+		<a href="#about">ABOUT</a>
+		<a href="#skills">SKILLS</a>
+		<a href="#pages">PAGES</a>
 	</div>
 
 <div class="right">
@@ -40,8 +44,8 @@
 
 	<div class="right flex-1">
 		<h6>Sameeksha Khandelwal</h6>
-		<h1>I am an Accidental <span>Engineer</span></h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h1>I am a Software <span>Engineer</span></h1>
+		<p>Having 5 years of enterprise experience with Wipro Technologies as a Sr. Software Engineer. Apart from having an expertise in Linux, I have developed cross functional skills in virtualization, storage, automation and cloud computing.  </p>
 		<div>
 			<button class="btn btn-secondary">Download CV</button>
 		</div>
@@ -53,7 +57,7 @@
 
 </header>
 
-<section class="about">
+<section id="about" class="about">
 	<div class="container flex items-center">
 
 		<div class="flex-1">
@@ -62,13 +66,154 @@
 		<div class="flex-1">
 			<h1>About <span>Me</span></h1>
 			<h3>Hola! I am Sameeksha Khandelwal</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>I have been a Botany graduate from University of Delhi and M.Tech from VIT, you read that right!
+			Well, its been an insane education journey but thats what has made it worth journeying. You can usually find me playing around the Linux machines, getting my hands dirty with cloud services, committing to git, scrolling through social handles and writing at YQ app.  </p>
+			<div>
+				<a href="https://www.linkedin.com/in/sameeksha-khandelwal-16b52912a/"><img src="./images/linkedinlogo.svg" width="20" height="20"></a>
+				<a href="https://github.com/SameekshaKhandelwal"><img src="./images/gitlogo.svg" width="20" height="20"></a>
+				<a href="https://www.facebook.com/sameeksha.khandelwal.5"><img src="./images/fblogo.svg" width="20" height="20"></a>
+				<a href="https://www.instagram.com/sameeksha_khandelwal/"><img src="./images/instalogo.svg" width="20" height="20"></a>
+			</div>
 			
 		</div>
 		
 	</div>
 	
 </section>
+<section id="skills"class="services">
+	<div class="container">
+		<h1 class="section-heading">MY <span>SKILLS</span></h1>
+		
+		<div class="card-wrapper">
+			<div class="card">
+				<img src="./images/linux_logo.png">
+				<h2>Unix Administration</h2>
+				<p>Advanced level administration, resource monitoring, PCS cluster, LVM, YUM, NFS, SAMBA, NTP, FTP, NIC-Bonding, user & group management, disk management, SAN allocation, replication, backup.</p>
+			</div>
+			<div class="card">
+				<img src="./images/virtua.svg">
+				<h2>Virtualization</h2>
+				<p>Procuring Virual Machines, editting its resources, vMotion and migration, maintaining HA, Resource management and monitoring.  </p>
+			</div>
+			<div class="card">
+				<img src="./images/devops.svg">
+				<h2>Automation</h2>
+				<p>Automated several tasks through Bash Scripting, CICD pipeline, Configuration Management tool, Ansible playbooks and python scripts.</p>
+			</div>
+			<div class="card">
+				<img src="./images/cloud.svg">
+				<h2>Cloud Computing</h2>
+				<p>Cloud Concepts, Architecture, Infrastructure as a code, EC2, S3, EBS, Elastic Beanstalk, RDS, VPC, IAM</p>
+			</div>
+			<div class="card">
+				<img src="./images/writing.svg">
+				<h2>Content Creation</h2>
+				<p>80+ quotes published on YourQuote.</p>
+			</div>
+			<div class="card">
+				<img src="./images/speaking.svg">
+				<h2>Public Speaking</h2>
+				<p>Events Anchoring, have been one of the speakers at MS Talks.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="pages"class="freelancer">
+	<h1>Think&Ink</h1>
+	<p>It is a perfect place to set your thoughts free and let your insights change the stereotypical perceptions.  </p>
+</section>
+<section class="reviews">
+	<div class="container">
+		<h1 class="section-heading">My <span>Quotes</span></h1>
+		<div class="slider">
+			<div class="slide">
+				<img src="./images/quote1.webp">
+				
+				
+			</div>
+		
+			<div class="slide">
+				<img src="./images/quote2.webp">
+				
+				
+			</div>
+		
+			<div class="slide">
+				<img src="./images/quote3.webp">
+				
+			</div>
+		
+			<div class="slide">
+				<img src="./images/quote4.webp">
+				
+				
+			</div>
+			<div class="slide">
+				<img src="./images/quote5.webp">
+				
+				
+			</div>
+			<div class="slide">
+				<img src="./images/quote6.webp">
+				
+				
+			</div>
+			<div class="slide">
+				<img src="./images/quotejpg1.jpg">
+				
+				
+			</div>
+			<div class="slide">
+				<img src="./images/quotejpg2.jpg">
+				
+				
+			</div>
+			<div class="slide">
+				<img src="./images/quotejpg3.jpg">
+				
+				
+			</div>
+			<div class="slide">
+				<img src="./images/quotejpg4.jpg">
+				
+				
+			</div>
+			<div class="slide">
+				<img src="./images/quotejpg5.jpg">
+				
+				
+			</div>
+			<div class="slide">
+				<img src="./images/quotejpg6.jpg">
+				
+				
+			</div>
+			<div class="slide">
+				<img src="./images/quotejpg7.jpg">
+				
+				
+			</div>
+			<div class="slide">
+				<img src="./images/quotejpg8.jpg">
+				
+				
+			</div>
+			<div class="slide">
+				<img src="./images/quotejpg9.jpg">
+				
+				
+			</div>
+			
+		</div>
+		<div class="slider-dots"></div>
+	</div>
+	
+</section>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/app.js"></script>
 
 </body>
 </html>
